@@ -8,31 +8,35 @@ body {
 
 .nav_1 {
 
+	background-color: #f8f8f8;
 }
 
 .first_container {
-	display: flex;
-	justify-content: space-between;
-	background-color: #f8f8f8;
+
 	padding: 10px;
 	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 15%;
+	margin-left: 15%;
+
 	
 }
 
 .phone_number {
 	color: #A2A2A2;
-	margin: 0 300px;
+
 }
 
 .nav_1_buttons {
 	display: flex;
 	justify-content: space-around;
-	margin-right: 300px;
+
 	
 }
 
 .nav_1_buttons a {
-	margin: 0 10px;
+	margin: 0 20px;
 	color: #A2A2A2;
 	font-family: 16px 'Space Mono', monospace;
 }
@@ -53,6 +57,7 @@ body {
 	color: #3B3442;
 	font-family: 16px 'Space Mono', monospace;
 	padding: 0px 14px;
+	margin: 0 20px;
 }
 
 a:link { 
@@ -72,4 +77,32 @@ a:hover {
 
 a:active { 
 	text-decoration: none; 
+}
+
+
+
+@media screen and (max-width: 1400px) {
+	.first_container {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) {
+	.phone_number {
+		display: none;
+	}
+	
+	.nav_1_buttons {
+		padding: 14px 0px 10px;
+	}
+	
+	.nav_1_buttons a:nth-of-type(1) { order: 3; }
+	.nav_1_buttons a:nth-of-type(2) { order: 4; }
+	.nav_1_buttons a:nth-of-type(3) { order: 5; }
+	.nav_1_buttons a:nth-of-type(4) { order: 1; }
+	.nav_1_buttons a:nth-of-type(5) { order: 2; }
+	.nav_1_buttons form:nth-of-type(1) { order: 6; }
+	
 }
