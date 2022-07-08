@@ -4,6 +4,7 @@
 
 body {
 	margin: 0;
+	
 }
 
 .nav_1 {
@@ -60,6 +61,16 @@ body {
 	margin: 0 20px;
 }
 
+.nav_2_buttons {
+	text-align: center;
+	padding-top: 10px;
+}
+
+a {
+	margin: auto;
+	text-align: center;
+}
+
 .drop_down_menu {
 	
 	display: none;
@@ -68,7 +79,7 @@ body {
 }
 
 a:link { 
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 
@@ -85,6 +96,106 @@ a:hover {
 a:active { 
 	text-decoration: none; 
 }
+
+
+.main_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?v=92401627442472956191484148034");
+}
+
+.header-button {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff;
+	padding-bottom: 400px;
+}
+
+h1 {
+	font-size: 74px;
+	margin-top: 60px;
+	margin-bottom: 5px;
+	padding-top: 250px;
+	letter-spacing: 10px;
+	
+}
+
+h3 {
+	
+}
+
+.shop-now {
+	font-size: 16px;
+	color: #fff;
+	margin-top: 47px;
+	background-color: transparent;
+	border: #fff solid 2px;
+	padding: 10px 15px;
+	font-family: 16px 'Space Mono', monospace;
+	
+}
+
+.offers {
+	display: flex;
+	justify-content: center;
+	margin: -200px;
+	color: #fff;
+	font-family: 16px 'Space Mono', monospace;
+	gap: 30px;
+}
+
+.offer_1 {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase1_img.jpg?v=49095316138222886821484315535");
+	margin-right: 30px;
+	padding: 50px;
+	font-size: 20px;
+	
+}
+
+.offer_2 {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase2_img.jpg?v=162659797639517566241484315538");
+	margin-right: 30px;
+	padding: 50px;
+	font-size: 20px;
+}
+
+.offer_3 {
+	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase3_img.jpg?v=51915544983955543791484315537");
+	margin-right: 30px;
+	padding: 50px;
+	font-size: 20px;
+}
+
+.featured-products {
+	margin-top: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+}
+
+.featured-products h2 {
+	padding-left: 50%;
+	padding-bottom: 50px;
+}
+
+.featured-products section {
+	display: flex;
+	justify-content: center;
+}
+
+.first-product-line {
+	
+	margin: 0px 200px;
+	gap: 10px;
+	font-family: 16px 'Space Mono', monospace;
+}
+
+
+
 
 
 
