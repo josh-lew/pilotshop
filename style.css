@@ -46,8 +46,8 @@ body {
 	justify-content: space-between;
 	background-color: #ffffff;
 	padding: 30px;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: 15%;
+	margin-right: 15%;
 	font-weight: bold;
 	color: #3B3442;
 }
@@ -58,6 +58,13 @@ body {
 	font-family: 16px 'Space Mono', monospace;
 	padding: 0px 14px;
 	margin: 0 20px;
+}
+
+.drop_down_menu {
+	
+	display: none;
+	border: black solid 3px;
+	
 }
 
 a:link { 
@@ -81,6 +88,19 @@ a:active {
 
 
 
+@media screen and (max-width: 1550px) {
+	.second_container {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.nav_2_buttons a {
+		font-weight: bold;
+		color: #3B3442;
+		font-family: 16px 'Space Mono', monospace;
+		padding: 0px 8px;
+		margin: 0 20px;
+}
+
 @media screen and (max-width: 1400px) {
 	.first_container {
 		margin-right: 0px;
@@ -89,8 +109,26 @@ a:active {
 	
 }
 
+@media screen and (max-width: 1250px) {
+	.second_container {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.nav_2_buttons a {
+		font-weight: bold;
+		color: #3B3442;
+		font-family: 16px 'Space Mono', monospace;
+		padding: 0px 4px;
+		margin: 0 10px;
+}
+
 @media screen and (max-width: 1000px) {
 	.phone_number {
+		display: none;
+	}
+	
+	.nav_2_buttons a {
+		
 		display: none;
 	}
 	
@@ -104,5 +142,15 @@ a:active {
 	.nav_1_buttons a:nth-of-type(4) { order: 1; }
 	.nav_1_buttons a:nth-of-type(5) { order: 2; }
 	.nav_1_buttons form:nth-of-type(1) { order: 6; }
-	
+
+	.drop_down_menu {
+		display: inline;
+		padding: 10px 10px;
+	}
 }
+
+@media screen and (max-width: 900px) {
+	.second_container{
+		flex-direction: column;
+	}
+}	
