@@ -98,11 +98,12 @@ a:active {
 }
 
 
-.main_container {
+.header_container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/slide1_image.jpg?v=92401627442472956191484148034");
+	background-size: cover;
 }
 
 .header-button {
@@ -140,7 +141,8 @@ h3 {
 .offers {
 	display: flex;
 	justify-content: center;
-	margin: -200px;
+	position: relative;
+	bottom: 200px;
 	color: #fff;
 	font-family: 16px 'Space Mono', monospace;
 	gap: 30px;
@@ -148,6 +150,7 @@ h3 {
 
 .offer_1 {
 	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase1_img.jpg?v=49095316138222886821484315535");
+	background-size: cover;
 	margin-right: 30px;
 	padding: 50px;
 	font-size: 20px;
@@ -156,6 +159,7 @@ h3 {
 
 .offer_2 {
 	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase2_img.jpg?v=162659797639517566241484315538");
+	background-size: cover;
 	margin-right: 30px;
 	padding: 50px;
 	font-size: 20px;
@@ -163,24 +167,31 @@ h3 {
 
 .offer_3 {
 	background-image: url("https://cdn.shopify.com/s/files/1/1634/8185/t/2/assets/custom_showcase3_img.jpg?v=51915544983955543791484315537");
+	background-size: cover;
 	margin-right: 30px;
 	padding: 50px;
 	font-size: 20px;
 }
 
 .featured-products {
-	margin-top: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
-	
+	width: 1000px;
 }
 
-.featured-products h2 {
-	padding-left: 50%;
+
+ 
+ h2 {
+	text-align: center;
 	padding-bottom: 50px;
 }
+
+
+main {
+	display: flex;
+	justify-content: center;
+} 
 
 .featured-products section {
 	display: flex;
@@ -189,9 +200,14 @@ h3 {
 
 .first-product-line {
 	
-	margin: 0px 200px;
-	gap: 10px;
+	display: flex;
+	flex-wrap: wrap;
+
 	font-family: 16px 'Space Mono', monospace;
+}
+
+.first-product-line div {
+	width: 25%;
 }
 
 
